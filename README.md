@@ -6,6 +6,8 @@
 
 * 函数方法名中动词使用一般现在时，`getXXX()，fetchData()`...
 
+* 表生命周期的方法可以加时态，例如 react 式的 didMount, vue 式的  mounted
+
 * 布尔值加上 `is` 前缀，`isOK`, 表状态时加上时态，`isLoading，isLoaded`
 
 * 原则上任何命名不允许缩写
