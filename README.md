@@ -308,7 +308,7 @@
 
   - [6.2](#6.2) <a name="6.2"></a> 变量使用 `camelCase` 命名，常量可使用 `camelCase, UPPER_CASE, PascalCase` 命名。
 
-    ```typescript
+    ```typescript
     let a = 1;
     // 全局的常量使用 UPPER_CASE
     const API_URL = 'http://www.gagogroup.cn/api';
