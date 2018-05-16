@@ -21,6 +21,7 @@
   1. [模块](#modules)
   1. [注释](#comments)
   1. [react](#react)
+  1. [参考](#references)
 
 <a name="tsconfig"></a>
 ## tsconfig 配置规范
@@ -1185,5 +1186,20 @@
   - [17.2](#17.2) <a name='17.2'></a> 使用 `//` 作为单行注释。`//` 之后需要保留一个空格，如果注释和代码在同一行内，之前也需要保留一个空格。
 
   - [17.5](#17.5) <a name='17.5'></a> 对外输出的内容尽量添加注释。
+
+**[⬆ 返回目录](#table-of-contents)**
+
+<a name="references"></a>
+## 参考
+
+1. [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+2. [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+3. [JavaScript Standard Style](https://standardjs.com/index.html)
+4. [Microsoft TypeScript Coding Guidelines](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines)
+5. [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
+6. [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+7. [TSLint Rules](https://palantir.github.io/tslint/rules/)
+8. [ESLint Rules](http://eslint.org/docs/rules/)
+9. [JSDoc](http://usejsdoc.org/)
 
 **[⬆ 返回目录](#table-of-contents)**
