@@ -1,5 +1,5 @@
 
-# Gago TypeScript Style Guide() {
+# TypeScript Style Guide() {
 
 <a name="table-of-contents"></a>
 ## 目录
