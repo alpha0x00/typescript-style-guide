@@ -26,7 +26,7 @@
 <a name="tsconfig"></a>
 ## tsconfig 配置规范
 
-  > 此推荐 config 适用于 typescript v2.7.x 以上。建议使用 `tsc --init`自动生成配置文件，会有相应的配置信息提示。
+  > 此推荐 config 适用于 typescript v2.7.x 以上。建议使用 `tsc --init`自动生成配置文件，会有相应的配置信息提示。
 
   ```json
   {
@@ -57,7 +57,7 @@
 
     * node 环境下永远为 `commonjs`。
 
-    * 若要配合 *antd* 使用，需设置为 `es2015`。
+    * 若要配合 *antd* 使用，需设置为 `es2015`。
 
     * 使用 *dynamic import* (前端代码切割) 时需配置为 `esnext`。
 
@@ -93,7 +93,7 @@
 
     ```
     // bad
-    ├── controllers
+    ├── controllers
     │   ├── user.controller.ts
     │   └── xxx.controller.ts
     ├─── models
@@ -115,17 +115,17 @@
 
     ```
 
-  - [2.3](#2.3) <a name="2.3"></a> *文件名*使用`小写`命名。使用 `"-"` 来分隔描述性单词。使用 `"."` 来分隔类型。遵循 `feature.type.ts` 的模式。例如 `user.controller.ts`。
+  - [2.3](#2.3) <a name="2.3"></a> *文件名*使用`小写`命名。使用 `"-"` 来分隔描述性单词。使用 `"."` 来分隔类型。遵循 `feature.type.ts` 的模式。例如 `user.controller.ts`。
 
   - [2.4](#2.4) <a name="2.4"></a> **单元测试文件**添加 `.spec` 后缀，**端到端测试文件**添加 `.e2e-spec` 后缀。
 
-  - [2.5](#2.5) <a name="2.5"></a> `export name` 应尽量与 `filename` 保持一致。使用命名导出使而不是默认导出。(使用 *react* 的同学注意)。
+  - [2.5](#2.5) <a name="2.5"></a> `export name` 应尽量与 `filename` 保持一致。使用命名导出使而不是默认导出。(使用 *react* 的同学注意)。
 
-  - [2.6](#2.6) <a name="2.6"></a> 其中可在模块文件夹（即上文中的 *user* 文件夹）下使用 `index.ts` **重新导出**其他模块需要 *import* 的内容。
+  - [2.6](#2.6) <a name="2.6"></a> 其中可在模块文件夹（即上文中的 *user* 文件夹）下使用 `index.ts` **重新导出**其他模块需要 *import* 的内容。
 
-    > Why？重新导出可以简化其他模块导入时的路径意为。
+    > Why？重新导出可以简化其他模块导入时的路径意为。
 
-    > Why？重新导出意为 `public api`，即不在该文件中导出的内容理论上作为模块的 `private api` 不建议导入。
+    > Why？重新导出意为 `public api`，即不在该文件中导出的内容理论上作为模块的 `private api` 不建议导入。
 
   - [2.7](#2.7) <a name="2.7"></a> 所有文件应遵循单一功能原则，一个文件一个类，考虑每个文件的代码限制在 `400` 行以内。
 
@@ -148,7 +148,7 @@
 
   - [3.6](#3.6) <a name="3.6"></a> 原则上任何命名不允许缩写。
 
-  - [3.7](#3.7) <a name="3.7"></a> 单个单词原则上坚决不允许缩写，尤其是用在变量声明时。例如 `password => pwd`，但允许像 `obj` 这种缩写，在函数参数名中，一些常见的可以使用缩写，例如 `information => info, parameters => params`。
+  - [3.7](#3.7) <a name="3.7"></a> 单个单词原则上坚决不允许缩写，尤其是用在变量声明时。例如 `password => pwd`，但允许像 `obj` 这种缩写，在函数参数名中，一些常见的可以使用缩写，例如 `information => info, parameters => params`。
 
   - [3.8](#3.8) <a name="3.8"></a> 拼接词长度超过 20 个可以使用缩写
 
@@ -204,17 +204,17 @@
 
   - [4.12](#4.12) <a name="4.12"></a> 冒号，逗号，分号之后保留一个空格，他们之前禁止保留空格。
 
-  - [4.13](#4.13) <a name="4.13"></a> 圆括号，方括号之间不需要空格，花括号之间需要空格。
+  - [4.13](#4.13) <a name="4.13"></a> 圆括号，方括号之间不需要空格，花括号之间需要空格。
 
   - [4.14](#4.14) <a name="4.14"></a> 对象的计算属性不需要空格。
 
-  - [4.15](#4.15) <a name="4.15"></a> 函数名和圆括号之间不需要空格。
+  - [4.15](#4.15) <a name="4.15"></a> 函数名和圆括号之间不需要空格。
 
   - [4.16](#4.16) <a name="4.16"></a> 左花括号之前需要一个空格。
 
 **[⬆ 返回目录](#table-of-contents)**
 
-<a name="punctuation"></a>
+<a name="punctuation"></a>
 ## 符号
 
   - [5.1](#5.1) <a name="5.1"></a> 需要分号，禁止多余的分号。
@@ -305,16 +305,16 @@
 <a name="variables"></a>
 ## 变量
 
-  - [6.1](#6.1) <a name="6.1"></a> 使用 `let` 声明变量，`const` 声明常量。不要使用 `var` 声明任何变量或常量。
+  - [6.1](#6.1) <a name="6.1"></a> 使用 `let` 声明变量，`const` 声明常量。不要使用 `var` 声明任何变量或常量。
 
-  - [6.2](#6.2) <a name="6.2"></a> 变量使用 `camelCase` 命名，常量可使用 `camelCase, UPPER_CASE, PascalCase` 命名。
+  - [6.2](#6.2) <a name="6.2"></a> 变量使用 `camelCase` 命名，常量可使用 `camelCase, UPPER_CASE, PascalCase` 命名。
 
     ```typescript
     let a = 1;
-    // 全局的常量使用 UPPER_CASE
+    // 全局的常量使用 UPPER_CASE
     const API_URL = 'http://www.gagogroup.cn/api';
     function fn() {
-      // 块内部的常量使用 camelCase
+      // 块内部的常量使用 camelCase
       const defaultValue = 1;
     }
     // 当常量表示一个 react 组件或全局的单例时，使用 PascalCase
@@ -354,7 +354,7 @@
 
   - [6.5](#6.5) <a name="6.5"></a> 声明之前禁止使用。
 
-  - [6.6](#6.6) <a name="6.6"></a> 禁止覆盖外层作用域变量。
+  - [6.6](#6.6) <a name="6.6"></a> 禁止覆盖外层作用域变量。
 
     ```typescript
     // bad
@@ -379,7 +379,7 @@
     const item = {};
     ```
 
-  - [7.2](#7.2) <a name="7.3"></a> 不要使用保留字作为键值，使用同义词进行替换。
+  - [7.2](#7.2) <a name="7.3"></a> 不要使用保留字作为键值，使用同义词进行替换。
 
     ```typescript
     // bad
@@ -459,7 +459,7 @@
     };
     ```
 
-  - [7.6](#7.6) <a name="7.6"></a> 键值需要加引号时再加引号。
+  - [7.6](#7.6) <a name="7.6"></a> 键值需要加引号时再加引号。
 
     ```typescript
     // bad
@@ -481,7 +481,7 @@
     };
     ```
 
-  - [7.7](#7.7) <a name="7.7"></a> 在对象有明确的类型时，使用 `.` 语法，对象类型是 `any` 或索引类型时，使用 `['key']` 语法。
+  - [7.7](#7.7) <a name="7.7"></a> 在对象有明确的类型时，使用 `.` 语法，对象类型是 `any` 或索引类型时，使用 `['key']` 语法。
 
     ```typescript
     interface User {
@@ -514,7 +514,7 @@
     console.log(obj['data']);
     ```
 
-  - [7.8](#7.8) <a name="7.8"></a> 考虑使用对象 `...` 扩展运算符代替 `Object.assign()`。
+  - [7.8](#7.8) <a name="7.8"></a> 考虑使用对象 `...` 扩展运算符代替 `Object.assign()`。
 
     ```typescript
     const original = { a: 1, b: 2 };
@@ -542,13 +542,12 @@
     const items = [];
     ```
 
-  - [8.2](#8.2) <a name="8.2"></a> 不要创建稀疏数组。
+  - [8.2](#8.2) <a name="8.2"></a> 不要创建稀疏数组。
 
     ```typescript
     // bad
     const items: number[] = [1, , 2];
     ```
-  
 
   - [8.3](#8.3) <a name="8.3"></a> 向数组添加元素时使用 Arrary#push 替代直接赋值。
 
@@ -616,13 +615,13 @@
     // good
     const sum = items.reduce((prevSum, item) => prevSum + item);
     ```
-  - [8.7](#8.7) <a name="8.7"></a> 在使用 pop，push，reverse 等会对数组产生突变的方法时，考虑用扩展运算符，slice() 等产生新的引用再操作，以使数据保持不可变。
+  - [8.7](#8.7) <a name="8.7"></a> 在使用 pop，push，reverse 等会对数组产生突变的方法时，考虑用扩展运算符，slice() 等产生新的引用再操作，以使数据保持不可变。
 
     ```typescript
     const items: number[] = [1, 2, 3];
 
     // bad
-    items.push(4);
+    items.push(4);
 
     // good
     const newItems = items.concat([4]);
@@ -638,13 +637,13 @@
     const newItems = [...items].reverse();
     ```
   - [8.8](#8.8) <a name="8.8"></a> 当数据类型不一致但顺序和数组长度固定时考虑使用元组类型。
-
+    
     ```typescript
     // bad
     const a: Array<string | number> = [1, 'a'];
 
     // good
-    interface NumStrTuple extends Array<number | string> {
+    interface NumStrTuple extends Array<number | string> {
       0: number;
       1: string;
       length: 2;
@@ -652,7 +651,7 @@
     const a: NumStrTuple = [1, 'a'];
     const a: NumStrTuple = ['a', 1]; // error
     ```
-
+    
 **[⬆ 返回目录](#table-of-contents)**
 
 <a name="numbers-strings"></a>
@@ -660,7 +659,7 @@
 
   - [9.1](#9.1) <a name="9.1"></a> 使用字面量创建 `number` 和 `string` 。
 
-  - [9.2](#9.2) <a name="9.2"></a> 保留小数点之前的 0，不要保留小数末尾的 0。
+  - [9.2](#9.2) <a name="9.2"></a> 保留小数点之前的 0，不要保留小数末尾的 0。
     ```typescript
     // bad
     const a = .1;
@@ -671,7 +670,7 @@
     ```
   - [9.3](#9.3) <a name="9.3"></a> 不要过多的使用 `+` 号拼接字符串，考虑使用模板字符串。
 
-  - [9.4](#9.4) <a name="9.4"></a> 尽量不要出现魔术字符串和魔术数字，考虑用有意义的变量代理。（数字 -1，0，1，100 等除外）。
+  - [9.4](#9.4) <a name="9.4"></a> 尽量不要出现魔术字符串和魔术数字，考虑用有意义的变量代理。（数字 -1，0，1，100 等除外）。
 
   - [9.5](#9.5) <a name="9.5"></a> 使用 `parseInt` 取整时指定进制。
 
@@ -682,22 +681,22 @@
 <a name="enums"></a>
 ## 枚举
 
-  - [10.1](#10.1) <a name="10.1"></a> 枚举使用 `PascalCase`，枚举值考虑使用 `PascalCase` 或 `UPPER_CASE` 来与普通对象区分。
+  - [10.1](#10.1) <a name="10.1"></a> 枚举使用 `PascalCase`，枚举值考虑使用 `PascalCase` 或 `UPPER_CASE` 来与普通对象区分。
 
-  - [10.2](#10.2) <a name="10.2"></a> 考虑使用常量枚举，这样编译后生成的代码更小，同时避免一些运行时性能损耗。
+  - [10.2](#10.2) <a name="10.2"></a> 考虑使用常量枚举，这样编译后生成的代码更小，同时避免一些运行时性能损耗。
 
 **[⬆ 返回目录](#table-of-contents)**
 
 <a name="interface-type"></a>
 ## 接口和类型
 
-  - [11.1](#11.1) <a name="11.1"></a> 接口和类型定义使用 `PascalCase`。
+  - [11.1](#11.1) <a name="11.1"></a> 接口和类型定义使用 `PascalCase`。
 
-  - [11.2](#11.2) <a name="11.2"></a> 接口定义之前不要加 `I` 前缀。
+  - [11.2](#11.2) <a name="11.2"></a> 接口定义之前不要加 `I` 前缀。
 
-  - [11.3](#11.3) <a name="11.3"></a> 考虑简单数据类型（number, string, boolean）不需要声明类型。
+  - [11.3](#11.3) <a name="11.3"></a> 考虑简单数据类型（number, string, boolean）不需要声明类型。
 
-  - [11.4](#11.4) <a name="11.4"></a> 数组类型声明使用 T[]。当 T 为复杂结构时，使用 Array<T>。
+  - [11.4](#11.4) <a name="11.4"></a> 数组类型声明使用 T[]。当 T 为复杂结构时，使用 Array<T>。
 
     ```typescript
     interface Data {
@@ -717,7 +716,7 @@
     const items: Array<{id: number, name: string}> = [];
     ```
 
-  - [11.5](#11.5) <a name="11.5"></a> 定义函数接口时考虑使用 `type` 而不是 `interface`。
+  - [11.5](#11.5) <a name="11.5"></a> 定义函数接口时考虑使用 `type` 而不是 `interface`。
 
     ```typescript
     // bad
@@ -737,17 +736,17 @@
     }
     ```
 
-  - [11.6](#11.6) <a name="11.6"></a> 定义方法接口考虑使用对象的方法简写。
+  - [11.6](#11.6) <a name="11.6"></a> 定义方法接口考虑使用对象的方法简写。
 
     ```typescript
     // bad
     interface User {
-      getName: () => string;
+      getName: () => string;
     }
 
     // good
     interface User {
-      getName(): string;
+      getName(): string;
     }
     ```
 
@@ -757,7 +756,7 @@
 
     ```typescript
     // bad
-    function foo(a: number): void;
+    function foo(a: number): void;
     function foo(a: number, b: number): void;
 
     function bar(a: number): void;
@@ -772,7 +771,7 @@
   - [11.9](#11.9) <a name="11.9"></a> 泛型中包含默认类型时，不用添加默认类型。
 
     ```typescript
-    function foo<T = number>(a: T): T;
+    function foo<T = number>(a: T): T;
     // bad
     foo<number>(1);
 
@@ -783,10 +782,10 @@
   - [11.10](#11.10) <a name="11.10"></a> 当类型是固定的几个数字或字符串时，使用字面量类型代替 `string` 和 `number`。
 
     ```typescript
-    type Position = 'left' | 'right' | 'top' | 'bottom';
+    type Position = 'left' | 'right' | 'top' | 'bottom';
 
     // bad
-    function foo(position: string): void;
+    function foo(position: string): void;
 
     // good
     function foo(position: Position): void;
@@ -876,7 +875,7 @@
     // good
     function foo() {
     }
-    const foo = （）=> ({});
+    const foo = （）=> ({});
     ```
 
   - [13.2](#13.2) <a name="13.2"></a> 不要在 `if`、`while` 等代码块中声明函数。
@@ -961,7 +960,7 @@
 
   - [13.7](#13.7) <a name="13.7"></a> 返回 `Promise` 的函数明确用 `async` 标记。
 
-  - [13.8](#13.8) <a name="13.8"></a> 不要使用函数来实现类，总是使用 `class` 来声明一个类和使用 `extends` 实现继承。
+  - [13.8](#13.8) <a name="13.8"></a> 不要使用函数来实现类，总是使用 `class` 来声明一个类和使用 `extends` 实现继承。
 
   - [13.9](#13.9) <a name="13.9"></a> 当你必须使用函数表达式（或传递一个匿名函数）时，使用箭头函数符号。
 
@@ -1014,7 +1013,7 @@
 
     ```typescript
     // bad
-    class User {
+    class User {
       public id: number;
       public name: string;
 
@@ -1025,15 +1024,15 @@
     }
 
     // good
-    class User {
+    class User {
       constructor(public id: number, public name: string) {}
     }
     ```
-  - [14.3](#14.3) <a name="14.3"></a> 考虑对类成员进行排序。
+  - [14.3](#14.3) <a name="14.3"></a> 考虑对类成员进行排序。
 
     ```typescript
     class User {
-      static a;
+      static a;
       static b() {}
 
       public c;
@@ -1056,7 +1055,7 @@
 
   - [15.1](#15.1) <a name="15.1"></a> 永远使用严格等 `===` 和 `!==` 而不是 `==` 和 `!=`。
 
-  - [15.2](#15.2) <a name="15.2"></a> 在条件语句中不要使用常量表达式。
+  - [15.2](#15.2) <a name="15.2"></a> 在条件语句中不要使用常量表达式。
 
     ```typescript
     // error
@@ -1123,7 +1122,7 @@
 
   - [15.6](#15.6) <a name="15.6"></a> 不要与字面量布尔值比较。
 
-  - [15.7](#15.7) <a name="15.7"></a> 使用严格的条件表达式。
+  - [15.7](#15.7) <a name="15.7"></a> 使用严格的条件表达式。
 
     ```typescript
     let a: string;
@@ -1149,11 +1148,11 @@
 <a name="modules"></a>
 ## 模块
 
-  - [14.1](#14.1) <a name="14.1"></a> 使用 `ES2015` 的模块系统而不是其他。
+  - [16.1](#16.1) <a name="16.1"></a> 使用 `ES2015` 的模块系统而不是其他。
 
-  - [14.2](#14.2) <a name="14.2"></a> 考虑使用命名导出代替默认导出。
+  - [16.2](#6.2) <a name="16.2"></a> 考虑使用命名导出代替默认导出。
 
-  - [14.3](#14.3) <a name="14.3"></a> 导入顺序遵循如下规则。
+  - [16.3](#16.3) <a name="16.3"></a> 导入顺序遵循如下规则。
 
     ```typescript
     import 'hammerjs';
@@ -1161,7 +1160,7 @@
     import React from 'react';
     import { a, b, c } from 'bar';
 
-    import '../xxx';
+    import '../xxx';
     import * as Bar from '../bar';
     import Utils from '../utils';
     import {
@@ -1181,7 +1180,7 @@
 <a name="comments"></a>
 ## 注释
 
-  - [17.1](#17.1) <a name='17.1'></a> 使用 `/** ... */` 作为多行注释。中间的 `*` 号之后保留一个空格。
+  - [17.1](#17.1) <a name='17.1'></a> 使用 `/** ... */` 作为多行注释。中间的 `*` 号之后保留一个空格。
 
   - [17.2](#17.2) <a name='17.2'></a> 使用 `//` 作为单行注释。`//` 之后需要保留一个空格，如果注释和代码在同一行内，之前也需要保留一个空格。
 
